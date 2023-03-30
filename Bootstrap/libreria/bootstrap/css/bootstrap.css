@@ -4338,12 +4338,12 @@ textarea.form-control-lg {
   --bs-card-cap-color: ;
   --bs-card-height: ;
   --bs-card-color: ;
-  --bs-card-bg: var(--bs-body-bg);
+  --bs-card-bg: #fafad2;
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   min-width: 0;
   height: var(--bs-card-height);
   word-wrap: break-word;
@@ -4447,16 +4447,12 @@ textarea.form-control-lg {
   border-radius: var(--bs-card-inner-border-radius);
 }
 
-.card-img,
-.card-img-top,
-.card-img-bottom {
-  width: 100%;
-}
 
 .card-img,
 .card-img-top {
   border-top-left-radius: var(--bs-card-inner-border-radius);
   border-top-right-radius: var(--bs-card-inner-border-radius);
+  overflow: scroll;
 }
 
 .card-img,
@@ -4507,6 +4503,10 @@ textarea.form-control-lg {
   }
 }
 
+.card1{
+  display: flex;
+  justify-content: center;
+}
 .accordion {
   --bs-accordion-color: var(--bs-body-color);
   --bs-accordion-bg: var(--bs-body-bg);
@@ -5985,6 +5985,7 @@ textarea.form-control-lg {
   position: relative;
   height: 500px;
 }
+
 
 .carousel.pointer-event {
   touch-action: pan-y;

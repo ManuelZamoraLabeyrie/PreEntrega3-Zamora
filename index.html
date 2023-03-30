@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="description" content="Encuentra el mejor arte contemporaneo del momento en Barcelona.">
+    <meta name="keywords" content="arte, pinturas, obras, tatuajes, alfombras, cuadros">
     <link rel="shortcut icon" href="./media/logo/educacion-sexual.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!--Bootstrap via CDN
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
@@ -19,14 +23,12 @@
 </head>
 <body>
     <main>
-        <!--Enlaces absolutos (comentario)-->
-        <h1><a href="https://www.instagram.com/contemporaryartstudio.bcn/" target="_blank">ACÑ</a></h1>
-            
-        <nav> 
+        <!--navbar-->
+        <nav class="navegacion"> 
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">
-                <img src="./media/logo/educacion-sexual.png" alt="logo-banana" width="100px">
+                <img class="logo-banana" src="./media/logo/educacion-sexual.png" alt="logo-banana" width="80px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -66,13 +68,33 @@
         <iframe width="560" height="315" src="./media/productos/video-agus-banana.mp4" title="agus pintando" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </main>
 
-    <h2>Ranking Productos màs comprados</h2>
-    <ol>
-        <li><img src="./media/productos/banana1.jpg" alt="banana1" width="200"></li>
-        <li><img src="./media/productos/ojo1.jpg" alt="ojo1" width="200"></li>
-        <li><img src="./media/productos/banana2.jpg" alt="banana2" width="200"></li>
-    </ol>
-
+    <h2>Secciones</h2>
+    <div class="card1">
+        <div class="card" style="width: 18rem;">
+        <img src="./media/productos/tatu-cora.jpg" class="card-img-top" alt="tatu-cora">
+        <div class="card-body">
+            <h5 class="card-title">Tatuajes</h5>
+            <p class="card-text">Ve nuestra selección de tatuajes.</p>
+            <a href="./pages/descubrir.html" class="btn btn-primary">Ir a Tatuajes</a>
+        </div>
+        </div>
+        <div class="card"  style="width: 18rem;">
+        <img src="./media/productos/312075955_797715241506207_2643723274701290189_n.jpg" class="card-img-top" alt="otro">
+        <div class="card-body">
+            <h5 class="card-title">Laminas</h5>
+            <p class="card-text">Ve nuestra selección de laminas.</p>
+            <a href="./pages/descubrir.html" class="btn btn-primary">Ir a Laminas</a>
+        </div>
+        </div>
+        <div class="card"  style="width: 18rem;">
+        <img src="./media/productos/313040958_814299226564817_1176667192395099044_n.jpg" class="card-img-top" alt="otro">
+        <div class="card-body">
+            <h5 class="card-title">Rugs</h5>
+            <p class="card-text">Ve nuestra selección de rugs.</p>
+            <a href="./pages/descubrir.html" class="btn btn-primary">Ir a Rugs</a>
+        </div>
+        </div>
+    </div>
 
     <section id="articulo">
         <article class="articulo">
@@ -86,7 +108,10 @@
     </section>
 
 
-    <footer id="footer">
+    <footer id="pie">
+        <a href="https://www.instagram.com/contemporaryartstudio.bcn/" target="_blank">
+            <i class="bi bi-instagram"></i>
+        </a>
         <p>Desarrollado por Manuel Zamora Labeyrie</p>
     </footer>
 
